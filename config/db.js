@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const colors = require ("colors");
+const colors = require ("../server/node_modules/colors");
 
 const connectDB = async() => {
     try {
