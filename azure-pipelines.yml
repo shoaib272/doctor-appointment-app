@@ -23,7 +23,7 @@ steps:
     command: 'install'
     workingDir: 'client'
 - task: Npm@1
-  displayName: 'installing Modules in /doc-appoinment-system'
+  
   inputs:
     command: 'install'
     workingDir: 'doc-appoinment-system'
