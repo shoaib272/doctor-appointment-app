@@ -37,9 +37,24 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
-      **
-      client/!node_modules/**
+      build/**
+      public/**
+      src/**
+      .gitigore**
+      package-lock.json**
+      package.json**
+      README.md**
+      config/**
+      controllers/**
+      middlewares/**
+      models/**
+      routes/**
+      .env**
+      package-lock.json**
+      package.json**
+      server.js**
     TargetFolder: $(Build.ArtifactStagingDirectory)
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
