@@ -61,3 +61,8 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'release'
     publishLocation: 'Container'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure subscription 1 (8fd839d7-fb25-4c24-b20d-b194ddf45cc7)'
+    command: 'build'
