@@ -30,7 +30,7 @@ app.get("*", function(req,res) {
 })
 
 //port
-const port = process.env.PORT || 8080;
+const PORT = 8080
 //listen port
 app.listen(port, () => {
   console.log(
