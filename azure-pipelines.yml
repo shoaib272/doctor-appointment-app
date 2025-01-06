@@ -37,6 +37,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     Contents: |
+      client/.github/**
       client/build/**
       client/public/**
       client/src/**
