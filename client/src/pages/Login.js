@@ -14,7 +14,7 @@ const Login = () => {
 const onfinishHandler = async (values) => {
   try {
     dispatch(showLoading());
-    const res = await axios.post("https://doctor-app-caacfndneehucshk.centralus-01.azurewebsites.net/api/v1/user/login", values);
+    const res = await axios.post("https://webdocapp-f4h2f5hgbxbshwcz.canadacentral-01.azurewebsites.net/api/v1/user/login", values);
     window.location.reload();
     dispatch(hideLoading());
     if(res.data.success){
