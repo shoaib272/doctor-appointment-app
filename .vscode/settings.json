@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/8fd839d7-fb25-4c24-b20d-b194ddf45cc7/resourceGroups/docapp_group/providers/Microsoft.Web/sites/webdocapp",
+    "appService.deploySubpath": "."
+}
