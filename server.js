@@ -23,7 +23,7 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 app.use("/api/v1/doctor", require("./routes/doctorRoutes"));
 
 //static files
-
+const port = 8080;
 app.use(express.static(path.join(__dirname, "./client/build")));
 
 app.get("*", function(req,res) {
@@ -31,7 +31,7 @@ app.get("*", function(req,res) {
  })
 
 //port
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 //listen port
 app.listen(port, () => {
   console.log(
