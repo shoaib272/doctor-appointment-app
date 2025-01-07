@@ -23,10 +23,10 @@ steps:
     command: 'install'
     workingDir: 'client'
 - task: Npm@1
-  displayName: 'installing Modules in C:\vsts-agent-win-x64-4.248.0 (1)\_work\3\s\\'
+  displayName: 'installing Modules in C:\practice\MERN-STACK\doc-appoinment-system'
   inputs:
     command: 'install'
-    workingDir: 'C:\vsts-agent-win-x64-4.248.0 (1)\_work\3\s\\'
+    workingDir: 'C:\practice\MERN-STACK\doc-appoinment-system'
 - task: Npm@1
   displayName: 'Building Modules in /client'
   inputs:
