@@ -23,10 +23,10 @@ steps:
     command: 'install'
     workingDir: 'client'
 - task: Npm@1
-  displayName: 'installing Modules in /routes'
+  displayName: 'installing Modules in C:\practice\MERN-STACK\doc-appoinment-system'
   inputs:
     command: 'install'
-    workingDir: 'routes'
+    workingDir: 'C:\practice\MERN-STACK\doc-appoinment-system'
 - task: Npm@1
   displayName: 'Building Modules in /client'
   inputs:
