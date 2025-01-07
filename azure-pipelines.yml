@@ -23,10 +23,10 @@ steps:
     command: 'install'
     workingDir: 'client'
 - task: Npm@1
-  displayName: 'installing Modules in doc-appoinment-system/'
+  displayName: 'installing Modules in C:\vsts-agent-win-x64-4.248.0 (1)\_work\3\s\\'
   inputs:
     command: 'install'
-    workingDir: 'doc-appoinment-system/'
+    workingDir: 'C:\vsts-agent-win-x64-4.248.0 (1)\_work\3\s\\'
 - task: Npm@1
   displayName: 'Building Modules in /client'
   inputs:
