@@ -36,8 +36,10 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    Contents: '**/client/node_modules/**'
-    TargetFolder: $(Build.ArtifactStagingDirectory)
+    Contents: |
+      '**/*'
+      Exclude: '**/client/node_modules/**'
+    TargetFolder: 
 
 - task: PublishBuildArtifacts@1
   inputs:
